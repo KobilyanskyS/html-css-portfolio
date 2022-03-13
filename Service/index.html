@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<!--вставил ссылку для иконок с fontawesome-->
+	<script src="https://kit.fontawesome.com/e67f388513.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-----------------------------------------------Шапка сайта с логотипом и меню навигации по сайту(начало)----------------------------------------------->
+	<header>
+		<!-------------Якорь для меню навигации, при нажатии на ссылку Home в навигации будет отображаться шапка------------->
+		<a href="" name="Home"></a>
+		<!-------------Якорь для меню навигации, при нажатии на ссылку Home в навигации будет отображаться шапка------------->
+		<!-------Wrapper, который ограничивает ширину экрана для некоторых блоков сайта. В него полностью помещается весь блок-------->
+		<div class="wrapper top_line">
+			<a href="#" title="logo"><img src="images/logo.png" alt="logo"></a>
+			<nav class="header_nav">
+				<ul>
+					<li class="active"><a href="#Home">Home</a></li>
+					<li><a href="#Services">Service</a></li>
+					<li><a href="#About">About Us</a></li>
+					<li><a href="#Pricing">Pricing Table</a></li>
+					<li><a href="#Hiw">How it work</a></li>
+					<li><a href="#Happy">Happy clients</a></li>
+					<li><a href="#Contact">Contact us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-----------------------------------------------Шапка сайта с логотипом и меню навигации по сайту(конец)----------------------------------------------->
+	<!------------Секция с контактной формой, иконками Font Awesome в полях формы и фотографиями со слайдером, слайдер я не сделал(начало)------------------->
+	<section class="form">
+		<div class="wrapper">
+		<!---------------Блок с заголовком и описанием(начало)---------------------->
+		<div class="head">
+			<h1>Boost up your Local business</h1>
+			<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
+		</div>
+		<!---------------Блок с заголовком и описанием(конец)---------------------->
+		<!--Форма(начало)-->
+			<form class="contact_form">
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="Full Name">
+				<i class="fas fa-envelope"></i>
+				<input type="email" placeholder="Email Address">
+				<i class="fas fa-phone"></i>
+				<input type="tel" placeholder="Phone Number">
+				<input type="submit" value="Request a quote">
+			</form>
+			<!--Форма(конец)-->
+			<img src="images/laptop.png" alt="">
+		</div>
+	</section>
+	<!------------Секция с контактной формой, иконками Font Awesome в полях формы и фотографиями со слайдером, слайдер я не сделал(конец)------------------->
+	<!--------------------------------------------------Секция с описанием сервисов данного сайта(начало)--------------------------------------------------->
+	<section class="info">
+		<!-------------Якорь для меню навигации, при нажатии на ссылку Services в навигации будет отображаться секция с описание сервисов------------->
+		<a href="" name="Services"></a>
+		<div class="wrapper">
+			<!--Заголовок с описанием блока(начало)-->
+			<div class="head">
+				<h2>Our Services</h2>
+				<p class="description">Lorem Ipsum is simply dummy Business industry.</p>
+			</div>
+			<!--Заголовок с описанием блока(конец)-->
+<!--Общий блок для всех колонок, также ему дал класс row для дальнейшего отключения float, так как разделял я колонки на правую и левую как раз через свойство float(начало)-->
+			<div class="columns row">
+			<!--Левая колонка Сервисов (начало)-->
+				<div class="left">
+					<!--Первый контентный блок из левой колонки Сервисов-->
+					<div class="l1">
+						<i class="far fa-clock" id="clock"></i>
+						<div class="divl1">
+						<h3>Font-Awesome Icons</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+						</div>
+					</div>
+					<!--Второй контентный блок из левой колонки Сервисов-->
+					<div class="l2">
+						<i class="fas fa-graduation-cap"></i>
+						<div class="divl2">
+						<h3>Working Contact form</h3>
+						<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will un cover many web sites still in their infancy</p>
+						</div>
+					</div>
+					<!--Третий контентный блок из левой колонки Сервисов-->
+					<div class="l3">
+						<i class="fas fa-bullseye"></i>
+						<div class="divl3">
+						<h3>Friendly Code</h3>
+						<p>Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham</p>
+						</div>
+					</div>
+				</div>
+				<!--Левая колонка Сервисов (конец)-->
+				<!--Правая колонка Сервисов (начало)-->
+				<div class="right">
+					<!--Первый контентный блок из правой колонки Сервисов-->
+					<div class="r1">
+						<i class="fas fa-cog"></i>
+						<div class="divr3">
+						<h3>Fully Responsive Design</h3>
+						<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy</p>
+						</div>
+					</div>
+					<!--Третий контентный блок из правой колонки Сервисов-->
+					<div class="r2">
+						<i class="fas fa-rocket"></i>
+						<div class="divr2">
+						<h3>Retina Ready icons here</h3>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything</p>
+						</div>
+					</div>
+					<!--Третий контентный блок из правой колонки Сервисов-->
+					<div class="r3">
+						<i class="fas fa-dollar-sign"></i>
+						<div class="divr3">
+						<h3>Flat trendy landing page Design</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+						</div>
+					</div>
+				</div>
+				<!--Правая колонка Сервисов (конец)-->
+			</div>
+			<!---------------------Общий блок для всех колонок(конец)------------------------>
+		</div>
+	</section>
+	<!--------------------------------------------------Секция с описанием сервисов данного сайта(конец)--------------------------------------------------->
+	<!-----------------------Секция "О нас", здесь уже без Wrapper'а, так как блок должен быть по ширине всего экрана(Начало)------------------------------>
+	<section class="about">
+		<!--Якорь для перемещения к этому блоку по ссылке в меню навигации-->
+		<a href="" name="About"></a>
+	<!--Вместо Wrapper'a сделал блок fullscreen, который растягивает контент вдоль всего экрана, так же прописал класс row для дальнейшего отключения float-->
+		<div class="fullscreen row">
+			<div class="image">
+				<img src="images/table.png" alt="">
+			</div>
+			<!--Блок с заголовком и описанием секции "О нас" (начало)-->
+			<div class="aboutus">
+				<h2>ABout us</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the ore recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+				<div class="btn">
+				<a href="#">Read more</a>
+				</div>
+			</div>
+			<!--Блок с заголовком и описанием секции "О нас" (конец)-->
+		</div>
+		<!--Конец блока с классом fullscreen-->
+	</section>
+	<!------------------------------------------------------------Секция "О нас" (Конец)------------------------------------------------------------------->
+	<!---------------------------------------------------------Секция с карточками цен(начало)------------------------------------------------------------->
+	<section class="price_cards">
+		<!--Якорь для перемещения к этому блоку по ссылке Pricing Table в меню навигации-->
+		<a href="" name="Pricing"></a>
+		<div class="wrapper">
+			<div class="head">
+				<h2>Choos your price</h2>
+				<p class="description">Lorem Ipsum is simply dummy text of the printing typesetting.</p>
+			</div>
+			<!--Блок для всех трёх карточек(начало)-->
+			<div class="cards">
+			<!--Блок первой карточки-->
+			<div class="price_card">
+				<h2 class="card_title">Basic plan</h2>
+				<h3 class="price">22<p>per month</p></h3>
+				<div class="descript">
+					<p class="descriptions">1 Account</p>
+					<p class="descriptions">8 hour support</p>
+					<p class="descriptions">Custom Cloud Services</p>
+				</div>
+				<div class="price_btn">
+				<a href="#">Get Started</a>
+				</div>
+			</div>
+			<!--Блок второй центральной карточки с соответствующим классом для ее стилизации карточки-->
+			<div class="price_card center">
+				<h2 class="card_title">Premium plan</h2>
+				<h3 class="price">42<p>per month</p></h3>
+				<div class="descript">
+					<p class="descriptions">2 Account</p>
+					<p class="descriptions">100MB Storage</p>
+					<p class="descriptions">Custom Cloud Services</p>
+				</div>
+				<div class="price_btn">
+				<a href="#">Get Started</a>
+				</div>
+			</div>
+			<!--Блок третьей карточки-->
+			<div class="price_card">
+				<h2 class="card_title">Gold plan</h2>
+				<h3 class="price">62<p>per month</p></h3>
+				<div class="descript">
+					<p class="descriptions">8Account</p>
+					<p class="descriptions">24 hour support</p>
+					<p class="descriptions">Custom Cloud Services</p>
+				</div>
+				<div class="price_btn">
+				<a href="#">Get Started</a>
+				</div>
+			</div>
+			</div>
+			<!--Блок для всех трёх карточек(конец)-->
+		</div>
+	</section>
+	<!---------------------------------------------------------Секция с карточками цен(конец)------------------------------------------------------------->
+	<!---------------------------------------------------------Секция "How it works"(начало)-------------------------------------------------------------->
+	<section class="arrows">
+		<a href="" name="Hiw"></a>
+		<div class="wrapper">
+			<div class="head">
+				<h2>How it works</h2>
+				<p class="description">Lorem Ipsum is simply dummy Business industry</p>
+			</div>
+			<!--Здесь я сделал два блока в строку, поэтому вышло как-то криво (тут тяжело было, не знал других способов). Это первый блок с картинками в строку (начало)-->
+			<div class="how_it_works">
+				<div class="icons">
+					<i class="fas fa-headphones step1"></i>
+					<img src="images/up_arrow.png" alt="" class="upper">
+					<i class="fas fa-unlock step2"></i>
+		  			<img src="images/lower_arrow.png" alt="" class="lower">
+					<i class="fas fa-cloud-upload-alt step3"></i>
+					<img src="images/up_arrow.png" alt="" class="upper">
+					<i class="far fa-thumbs-up step3"></i>
+				</div>
+				<!------------------Первый блок с картинками в строку (конец)--------------------->
+				<!---------------Блок с текстовыми карточками (шагами) в строку(начало)--------------->
+				<div class="text_cards">
+					<div class="hiw_text step1">
+						<h3>Step 1</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</div>
+					<div class="hiw_text step2">
+						<h3>Step 2</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</div>
+					<div class="hiw_text step3">
+						<h3>Step 3</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</div>
+					<div class="hiw_text step4">
+						<h3>Step 4</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</div>
+				</div>
+				<!---------------Блок с текстовыми карточками (шагами) в строку(конец)--------------->
+			</div>
+			<div class="arrow_btn">
+				<a href="#">Get start Now</a>
+			</div>
+		</div>
+	</section>
+	<!---------------------------------------------------------Секция "How it works"(конец)-------------------------------------------------------------->
+	<!------------------------------------------------------Секция с отзывами клиентов(начало)----------------------------------------------------------->
+	<section class="clients">
+		<a href="" name="Happy"></a>
+		<div class="wrapper row">
+			<div class="head">
+				<h2>Happy Clients</h2>
+				<p class="description">We are explain who is using our business solutions</p>
+			</div>
+			<!----------------------------------------Общий блок для всех карточчек с отзывами(начало)----------------------------------->
+			<div class="clients_container">
+				<!--Левая колонка с отзывами(начало)-->
+				<div class="left">
+					<!--Первая карточка в левой колонке с отзывами(начало)-->
+					<div class="first">
+						<img src="images/project_manager.png" alt="">
+						<div class="p">
+							<p>
+								&#8220 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make. a type specimen book. &#8221</br>
+								<p class="author">Darwin Michle, <span>Project manager</span></p>
+							</p>
+						</div>
+					</div>
+					<!--Первая карточка в левой колонке с отзывами(конец)-->
+					<!--Вторая карточка в левой колонке с отзывами(начало)-->
+					<div class="second">
+						<img src="images/lipsum_director.png" alt="">
+						<div class="p">
+							<p>
+								&#8220 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make. a type specimen book. &#8221</br>
+								<p class="author">Clips arter, <span>Lipsum directer</span></p>
+							</p>
+						</div>
+					</div>
+					<!--Вторая карточка в левой колонке с отзывами(конец)-->
+				</div>
+				<!--Левая колонка с отзывами (конец)-->
+				<!--Правая колонка с отзывами (начало)-->
+				<div class="right">
+					<!--Верхняя карточка с отзывом в правой колонке(начало)-->
+					<div class="third">
+						<img src="images/creative_director.png" alt="">
+						<div class="p">
+							<p> 
+								&#8220 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrystandard dummy text ever since the 1500s, wen an unknown printer took a galley of type and scrambled to make a type specimen book. &#8221</br>
+								<p class="author">Madam Elisabath, <span>Creative Director</span></p>
+							</p>
+						</div>
+					</div>
+					<!--Верхняя карточка с отзывом в правой колонке(конец)-->
+					<!--Нижняя карточка с отзывом в правой колонке(начало)-->
+					<div class="fourth">
+						<img src="images/manager.png" alt="">
+						<div class="p">
+							<p>
+								&#8220 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrystandard dummy text ever since the 1500s, wen an unknown printer took a galley of type and scrambled to make a type specimen book. &#8221</br>
+								<p class="author">zam cristafr, <span>manager</span></p>
+							</p>
+						</div>
+					</div>
+					<!--Нижняя карточка с отзывом в правой колонке(конец)-->
+				</div>
+				<!--Правая колонка с отзывами (конец)-->
+			</div>
+			<!----------------------------------------Общий блок для всех карточчек с отзывами(конец)----------------------------------->
+		</div>
+	</section>
+	<!------------------------------------------------------Секция с отзывами клиентов(конец)----------------------------------------------------------->
+	<!-------------------------------------------------Секция с  картой и обратной связью(начало)------------------------------------------------------>
+	<section class="newsletter">
+		<a href="" name="Contact"></a>
+		<div class="wrapper">
+			<div class="head">
+				<h2>Newsletter</h2>
+				<p class="description">Lorem Ipsum is simply dummy Business industry</p>
+			</div>
+			<!--Форма обратной связи с именем и почтной (начало)-->
+			<div class="form">
+				<form class="newsletter_form">
+					<i class="fas fa-user"></i>
+					<input type="text" placeholder="Name">
+					<i class="fas fa-envelope"></i>
+					<input type="email" placeholder="Email Address">
+					<input type="submit" value="Subscribe now">
+				</form>
+			</div>
+			<!--Форма обратной связи с именем и почтной (конец)-->
+			<!--Карта с адресом и контактами(начало)-->
+			<div class="map">
+					<div class="address">
+					<h3>Address</h3>
+					<p>Business street
+					Second north section
+					Bavani nagar. 88769
+					Call : +987-9976-999
+					<span>info@businessface.com</span></p>
+					</div>
+					<img src="images/logo.png" alt="">
+			</div>
+			<!--Карта с адресом и контактами(конец)-->
+		</div>
+	</section>
+	<!-------------------------------------------------Секция с  картой и обратной связью(начало)------------------------------------------------------>
+	<!----------------------------Футер с еще одним меню навигации, номером телефона и иконками соц сетей(начало)-------------------------------------->
+	<footer class="footer">
+		<div class="wrapper">
+			<nav class="footer_nav">
+				<ul>
+					<li class="active"><a href="#Home">Home</a></li>
+					<li><a href="#Services">Service</a></li>
+					<li><a href="#About">About Us</a></li>
+					<li><a href="#Pricing">Pricing Table</a></li>
+					<li><a href="#Hiw">How it work</a></li>
+					<li><a href="#Happy">Happy clients</a></li>
+					<li><a href="#Contact">Contact us</a></li>
+				</ul>
+			</nav>
+			<div class="numbers_main">
+				<i class="fas fa-phone"></i>
+				<span class="number">+987 9976 999</span>
+			</div>
+			<div class="social">
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+		</div>
+	</footer>
+	<!----------------------------Футер с еще одним меню навигации, номером телефона и иконками соц сетей(конец)-------------------------------------->
+	<!--Сделал еще один футер, но лучше бы это был просто блок под соц сетями и для этого блока я бы прописал стили с фоном и т п, не знаю нормально это или нет-->
+	<footer class="copyright">
+		<div class="wrapper">
+			<p>All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</p>
+		</div>
+	</footer>
+</body>
+</html>

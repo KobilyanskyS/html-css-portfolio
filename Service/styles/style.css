@@ -1,0 +1,862 @@
+/*Подключил с этой таблице стилей еще одну, которая сбрасывает все встроенные стили браузеров*/
+@import "reset.css";
+/*Подключил шрифт Lato с шириной 400 и 700 с гугл фонтс, а так же Open Sans и Montserrat, которые присутствуют на макете*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+/*Прописал отступы для всех блоков wrapper на странице*/
+.wrapper{
+max-width: 1170px;	
+width: calc(100% - 70px);
+margin: 0 auto;
+}
+header{
+background: #ffffff;
+}
+.top_line{
+display: flex;
+align-items: center;
+justify-content: space-between;
+min-height: 93px;
+}
+.header_nav{
+font-size: 14px;
+line-height: 14px;
+color: #868686;
+text-transform: uppercase;
+font-family: Lato;
+font-weight: 400;
+}
+/*Сделал внутренние отступы для ссылок в меню навигации, чтобы вся область вокруг ссылки при наведении была активной*/
+.header_nav a{
+text-decoration: none;
+color: inherit;
+padding-left: 20px;
+padding-right: 20px;
+height: 34px;
+padding-top: 10px;
+padding-bottom: 10px;
+line-height: 34px;
+}
+.header_nav ul{
+display:  flex;
+}
+.header_nav ul li{
+transition: background 300ms ease-in-out;
+margin: 0 1px;
+}
+.header_nav ul li.active{
+background: #ffbb42;
+border-radius: 2px;
+color: #ffffff;
+}
+/*Сделал эффект изменения цвета фона и текста при наведении*/
+.header_nav ul li:hover{
+background: #ffbb42;
+color: #ffffff;
+transition: background 300ms ease-in-out;
+}
+/**************************************Прописываю стили для еекции с классом form(начало)********************************/
+section.form{
+margin-bottom: 203px;
+background: #709dca;
+padding-top: 110px;
+text-align: center;
+}
+section.form .head{
+line-height: 1;
+max-height: 53px;
+align-items: space-between;
+padding-bottom: 33px;
+}
+/*Стили для заголовка секции*/
+section.form .head h1{
+padding: 0;
+font-family: "Montserrat";
+line-height: 1;	
+font-size: 35px;
+font-weight: 700;
+color: #ffffff;
+text-transform: uppercase;
+}
+/*Стили для описания под заголовком*/
+section.form .head .description{
+font-family: "Open Sans";
+color: #ffffff;
+font-weight: 300;
+font-size: 16px;
+}
+section.form .contact_form input{
+box-sizing: border-box;
+padding-bottom: 0px;
+}
+section.form .contact_form input[type="text"], section.form .contact_form input[type="email"], section.form .contact_form input[type="tel"]{
+width: 281px;
+margin-bottom: 25px;
+background: #ffffff;
+color: #000000;
+border-radius: 3px;
+border: 0;
+padding-left: 44px;
+height: 46px;
+line-height: 46px;
+font-size: 13px;
+font-family: "Open Sans";
+font-weight: 400;
+}
+/*Не знал как вставить иконки внутрь полей ввода в форме, поэтому просто передвинул их внутрь при помощи transrorm:translateX*/
+section.form .contact_form i{
+transform: translateX(35px);
+color: #6e6e6e;
+font-size: 16px;
+}
+/*Прописал стили для кнопки, а так же эффект при наведении */
+section.form .contact_form input[type="submit"]{
+border: 0;
+display: inline-block;
+padding-left: 45px;
+padding-right: 45px;
+background: #ffbb42;
+height: 46px;
+line-height: 46px;
+font-size: 14px;
+border-radius: 3px;
+text-decoration: none;
+color: #ffffff;	
+font-weight: 400;
+text-transform: uppercase;
+margin-left: 18px;
+}
+section.form .contact_form input[type="submit"]:hover{
+background: #e7ad48;
+}
+/*Картинку ноутбука передвинул вниз к границе блока, как на макете, иначе я не понимал как это можно релизовать*/
+section.form img{
+transform: translateY(61px);
+}
+/*Отключение float с CSS-Tricks (для этого добавлял к блоку с классом wrapper еще класс row)*/
+.row:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.row { display: inline-block; }
+/* start commented backslash hack \*/
+* html .row { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+/***************************Стили для блока с колонками сервисов******************/
+section.info{
+background: #ffffff;
+text-align: center;
+}
+section.info .head h2{
+padding: 0;
+font-family: "Montserrat";
+line-height: 1;	
+font-size: 35px;
+font-weight: 700;
+color: #000000;
+text-transform: uppercase;
+}
+section.info .head .description{
+font-family: "Open Sans";
+opacity: 0.9;
+color: #394b50;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+}
+section.info .head{
+padding-bottom: 90px;
+}
+/*отобразил сервисы в две колонки при помощи float*/
+.left{
+float:left;
+width:40%;
+}
+.right{
+float:right;
+width:40%;
+}
+.l1,.r1,.l2,.r2,.l3,.r3{
+display:inline-block;
+width:100%;
+}
+section.info .columns{
+padding-bottom: 135px;
+}
+section.info .columns h3{
+opacity: 0.9;
+color: #394b50;
+font-family: Lato;
+font-size: 16px;
+font-weight: 700;
+line-height: 22px;
+text-transform: uppercase;
+text-align: justify;
+margin-bottom: 15px;
+}
+section.info .columns p{
+opacity: 0.9;
+text-align: left;
+color: #7b7b7b;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 22px;
+margin-bottom: 50px;
+}
+section.info .columns i{
+display: flex;
+opacity: 0.9;
+color: #709dca;
+font-size: 50px;
+line-height: 22px;
+transform: translate(-70px, 40px);
+}
+#clock{
+color:#f6772c;
+}
+.fullscreen{
+max-width: 1700px;
+width: 100%;
+margin: 0 auto;
+}
+/*Стили для блока "О нас" он должен отображаться во всю ширину окна, по 2 расположенных в строку блока с фотографией и контентной частью. Тут у меня при уменьшении ширины экрана фотография накладывалась на контент и у меня получалось наложение, но при увелечении все нормально отоборажается 50% ширины на 50% ширины*/
+section.about{
+height: 623px;
+background: #ffc155;
+}
+section.about .image{
+width: 45%;
+float:left;
+}
+section.about .aboutus{
+width: 45%;
+float:right;
+text-align: left;
+padding-left: 80px;
+padding-top: 164px;
+}
+section.about .aboutus h2{
+color: #ffffff;
+font-family: "Montserrat";
+font-size: 30px;
+font-weight: 700;
+line-height: 22px;
+text-transform: uppercase;
+padding-bottom: 28px;
+}
+section.about .aboutus p{
+width: 505px;
+color: #ffffff;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 24px;
+padding-bottom: 33px;
+}
+section.about .aboutus .btn{
+background-color: #ffc155;
+border: 1px solid #e7ad48;
+border-radius: 3px;
+display: inline-block;
+width: 145px;
+height: 38px;
+padding-top: 16px;
+text-align: center;
+cursor: pointer;
+}
+section.about .aboutus .btn a{
+text-decoration: none;
+color: #ffffff;
+font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+}
+section.about .aboutus .btn:hover{
+background: #e7ad48;
+}
+/************************************Стили для блока с карточками цены*******************************/
+section.price_cards{
+background: #e7edf3;
+padding-top: 137px;
+}
+section.price_cards .top_line{
+text-align: center;
+}
+section.price_cards .head{
+text-align: center;
+padding-bottom: 50px;
+}
+section.price_cards .head h2{
+padding: 0;
+font-family: "Montserrat";
+line-height: 1;	
+font-size: 35px;
+font-weight: 700;
+color: #000000;
+text-transform: uppercase;
+}
+section.price_cards .head .description{
+font-family: "Open Sans";
+opacity: 0.9;
+color: #394b50;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+}
+/*Отобразил карточки по центру в строку*/
+section.price_cards .cards{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+padding-bottom: 195px;
+}
+/*Прописал общие стили для каждой карточки*/
+section.price_cards .cards .price_card{
+background: #ffffff;
+text-align: center;
+display: inline-block;
+border-radius: 3px;
+padding-bottom: 48px;
+}
+section.price_cards .cards .price_card .card_title{
+padding-top: 57px;
+padding-right: 100px;
+padding-left: 100px;
+color: #818b95;
+font-family: Lato;
+font-size: 25px;
+font-weight: 300;
+line-height: 22px;
+text-transform: uppercase;
+padding-bottom: 30px;
+}
+section.price_cards .cards .price_card .price{
+color: #818b95;
+font-family: Lato;
+font-size: 20px;
+font-weight: 300;
+line-height: 22px;
+font-variant: small-caps;
+}
+/*Добавил знак доллара через псевдоэлемент с отображением выше цифры с ценой, потому что не понимаю как через html это можно еще реализовать*/
+section.price_cards .cards .price_card .price:before{
+content:"$";
+color:#ffbb42;
+font-size: 30px;
+font-family: Lato;
+font-weight: 700;
+vertical-align: 25px;
+}
+section.price_cards .cards .price_card .price{
+color:#ffbb42;
+font-size: 60px;
+font-family: Lato;
+font-weight: 700;
+}
+section.price_cards .cards .price_card .price p{
+color: #818b95;
+font-family: Lato;
+font-size: 20px;
+font-weight: 300;
+line-height: 22px;
+font-variant: small-caps;
+padding-top: 18px;
+}
+section.price_cards .cards .price_card .descript .descriptions{
+border-top: 1px solid #e2e9f0 ;
+display: inline-block;
+width: 80%;
+color: #b5bbc1;
+font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+line-height: 40px;
+text-transform: uppercase;
+}
+section.price_cards .cards .center{
+background: #709dca;
+padding-top: 30px;
+padding-bottom: 78px;
+}
+/*для знака доллара задаю белый цвет*/
+section.price_cards .cards .center .price:before{
+color: #ffffff;
+}
+/*Для центральной карточки задаю белый цвет шрифта*/
+section.price_cards .cards .center .card_title, section.price_cards .cards .center .price, section.price_cards .cards .center .price p, section.price_cards .cards .center .descript .descriptions{
+color: #ffffff;
+}
+section.price_cards .cards .center .descriptions{
+opacity: 0.8;
+}
+section.price_cards .cards .price_card .descript{
+padding-top: 30px;
+padding-bottom: 35px;
+}
+section.price_cards .cards .price_card .price_btn{
+background-color: #ffbb42;
+display: inline-block;
+padding-bottom: 48;
+width: 131px;
+height: 38px;
+padding-top: 16px;
+text-align: center;
+cursor: pointer;
+border-radius: 3px;
+}
+section.price_cards .cards .price_card .price_btn:hover{
+background: #e7ad48;
+}
+section.price_cards .cards .price_card .price_btn a{
+text-decoration: none;
+color: #ffffff;
+font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+}
+/***************************************Стили для секции "How it works"*******************************/
+section.arrows .head{
+text-align: center;
+padding-top: 155px;
+}
+section.arrows .head h2{
+padding: 0;
+font-family: "Montserrat";
+line-height: 1;	
+font-size: 35px;
+font-weight: 700;
+color: #000000;
+text-transform: uppercase;
+}
+section.arrows .head .description{
+font-family: "Open Sans";
+opacity: 0.9;
+color: #394b50;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+padding-bottom: 103px;
+}
+section.arrows .how_it_works .icons{
+display: flex;
+align-items: center;
+justify-content: space-around;
+position: relative;
+padding-top: 80px;
+}
+section.arrows .how_it_works .icons i{
+color:#76a1cc;
+font-size: 72px;
+}
+/*Так как иконки и картинки стрелок у меня идут в ряд, я опять же с спустил и поднял их через translate*/
+section.arrows .how_it_works .icons .upper{
+transform: translateY(-50px);
+}
+section.arrows .how_it_works .icons .lower{
+transform: translateY(50px);
+}
+section.arrows .how_it_works .text_cards{
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: relative;
+text-align: center;
+padding-top: 102px;
+padding-bottom: 91px;
+}
+section.arrows .how_it_works .text_cards .hiw_text{
+width: 250px;
+}
+section.arrows .how_it_works .text_cards .hiw_text h3{
+color: #394b50;
+font-family: Lato;
+font-size: 20px;
+font-weight: 700;
+line-height: 22px;
+text-transform: uppercase;
+padding-bottom: 28px;
+}
+section.arrows .how_it_works .text_cards .hiw_text p{
+color: #7b7b7b;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 22px;
+}
+section.arrows .arrow_btn{
+margin: auto;
+background-color: #ffbb42;
+padding-bottom: 48;
+width: 150px;
+height: 38px;
+padding-top: 16px;
+text-align: center;
+cursor: pointer;
+border-radius: 3px;
+margin-bottom: 150px;
+}
+section.arrows .arrow_btn:hover{
+background: #e7ad48;
+}
+section.arrows .arrow_btn a{
+text-decoration: none;
+color: #ffffff;
+font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+}
+/*Стили для секции с отзывами*/
+section.clients{
+background: #ffc155;
+}
+/*расположил общий блок с карточками отзывов по центру*/
+section.clients .clients_container{
+display: flex;
+justify-content: center;
+padding-bottom: 160px;
+}
+section.clients .head{
+text-align: center;
+padding-bottom: 50px;
+}
+section.clients .head h2{
+padding-top: 141px;
+color: #ffffff;
+font-family: "Montserrat";
+font-size: 30px;
+font-weight: 700;
+letter-spacing: -0.75px;
+text-transform: uppercase;
+}
+section.clients .head .description{
+color: #ffffff;
+font-family: "Open Sans";
+font-size: 16px;
+font-weight: 400;
+}
+/*Для каждой колонки и карточки задал свои стили. Сделал margin'ы и такие большие, потому что колонки у меня не много накладывались друг на друга правая и левая */
+section.clients .clients_container .right{
+border-radius: 3px;
+margin-left: 70px;
+}
+section.clients .clients_container .left{
+ border-radius: 3px;
+ margin-right: 70px;
+}
+section.clients .clients_container .right .third{
+padding-top: 51px;
+padding-bottom: 51px;
+background: #ffffff;
+margin-bottom: 10px; 
+border-radius: 2px;
+width: 567px;
+}
+section.clients .clients_container .right .fourth{
+padding-top: 51px;
+padding-bottom: 51px;
+background: #ffffff;
+margin-top:10px; 
+border-radius: 2px;
+width: 567px;
+}
+section.clients .clients_container .left .first{
+padding-top: 51px;
+padding-bottom: 51px;
+background: #ffffff;
+margin-bottom: 10px; 
+border-radius: 2px;
+width: 567px;
+}
+section.clients .clients_container .left .second{
+padding-top: 51px;
+padding-bottom: 51px;
+background: #ffffff;
+margin-top:10px; 
+border-radius: 2px;
+width: 567px;
+}
+section.clients .clients_container .left .first img{
+padding-left: 30px;
+padding-right: 30px;
+float: left;
+margin-right: 2px;
+border-radius: 50%;
+}
+section.clients .clients_container .left .second img{
+padding-left: 30px;
+padding-right: 30px;
+float: left;
+margin-right: 2px;
+border-radius: 50%;
+}
+section.clients .clients_container .right .third img{
+padding-left: 30px;
+padding-right: 30px;
+float: left;
+margin-right: 2px;
+border-radius: 50%;
+}
+section.clients .clients_container .right .fourth img{
+padding-left: 30px;
+padding-right: 30px;
+float: left;
+margin-right: 2px;
+border-radius: 50%;
+}
+section.clients .clients_container .left .first .p{
+padding-right: 31px;
+} 
+section.clients .clients_container .left .second .p{
+padding-right: 31px;  
+}
+section.clients .clients_container .right .third .p{
+padding-right: 31px;
+}
+section.clients .clients_container .right .fourth .p{
+padding-right: 31px;
+}
+section.clients .clients_container .p {
+color: #7b7b7b;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 22px;
+}
+section.clients .clients_container .p .author{
+	padding-top: 29px;
+color: #f6772c;
+font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-transform: uppercase;
+padding-left: 184px;
+}
+section.clients .clients_container .p .author span{
+color: #99a9ae;
+}
+/*Стили для секции с контактной формой, адресами и картой*/
+section.newsletter .head{
+padding-top: 154px;
+}
+section.newsletter .head h2{
+padding: 0;
+font-family: "Montserrat";
+line-height: 1;	
+font-size: 35px;
+font-weight: 700;
+color: #000000;
+text-transform: uppercase;
+}
+section.newsletter .head .description{
+font-family: "Open Sans";
+opacity: 0.9;
+color: #394b50;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+padding-bottom: 38px;
+}
+section.newsletter .wrapper{
+text-align: center;
+}
+/*Не стал добавлять фотографию карты в img тег в html, а просто сделал фоном общего блока, но этот фон не отображался изначально полностью, поэтому я просто растянул фотографию карты по ее размерам, тоже не знал как что тут делать*/
+section.newsletter .map{
+width: 1100px;
+height: 550px;
+background: url("map.png");
+margin-top: 53px;
+margin-bottom: 57px;
+}
+section.newsletter .map h3{
+padding-top: 65px;
+}
+section.newsletter .map .address {
+position: relative;
+background-color: #394b50;
+width: 285px;
+height: 285px; /* vertically center */
+color: white;
+border-radius: 50%;
+transform: translateY(40px);
+margin: 0 auto;
+}
+/*Добавил треугольник снизу круглого блока с адресами, не знал как точно его надо делать, поэтому не много криво и не так как на макете*/
+section.newsletter .map .address:after{
+content: '';
+position: absolute;
+width: 0;
+height: 0;
+border: 10px solid;
+border-top-color: #394b50;
+top: 100%;
+left: 50%;
+margin-left: -10px;
+padding-top: -20px;
+}
+/*Логотип и блок с адресами накладывались друг на друга, я не знал как отобразить их в столбик друг под другом, поэтому здравствуй translate*/
+section.newsletter .map img{
+transform: translateY(59px);
+}
+/*Для блока с адерсом прописал фиксированную 140px ширину, потому что конент при большей ширине криво отображается*/
+section.newsletter .map .address h3, section.newsletter .map .address p{
+width: 140px;
+margin: 0 auto;
+}
+section.newsletter .map .address p{
+color: #aeb7ba;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 24px;
+}
+section.newsletter .map .address h3{
+color: #ffffff;
+font-family: Lato;
+font-size: 15px;
+font-weight: 700;
+text-transform: uppercase;
+padding-bottom: 30px;
+}
+section.newsletter .map .address p span{
+color: #ffbb42;
+}
+section.form .contact_form input{
+box-sizing: border-box;
+padding-bottom: 0px;
+}
+section.newsletter .form .newsletter_form input[type="text"]{
+width: 308px;
+}
+section.newsletter .form .newsletter_form input[type="email"]{
+width: 388px;
+}
+section.newsletter .form .newsletter_form input[type="text"], section.newsletter .form .newsletter_form input[type="email"]{
+background: #ffffff;
+color: #000000;
+border-radius: 3px;
+border: 1px solid #cbcbcb;
+padding-left: 44px;
+height: 47px;
+line-height: 46px;
+font-size: 13px;
+font-family: "Open Sans";
+font-weight: 400;
+}
+/*Опять же через translate протолкнул иконки внутрь полей ввода*/
+section.newsletter .form .newsletter_form i{
+transform: translateX(35px);
+color: #6e6e6e;
+font-size: 16px;
+}
+section.newsletter .form .newsletter_form input[type="submit"]{
+width: 218px;
+border: 0;
+display: inline-block;
+padding-left: 45px;
+padding-right: 45px;
+background: #ffbb42;
+height: 50px;
+line-height: 46px;
+font-size: 14px;
+border-radius: 3px;
+text-decoration: none;
+color: #fff;
+font-weight: 400;
+text-transform: uppercase;
+margin-left: 18px;
+}
+section.newsletter .form .newsletter_form input[type="submit"]:hover{
+background: #e7ad48;
+}
+footer .wrapper{
+border-top: 1px solid #e3e7ec;
+text-align: center;
+}
+.footer_nav{
+margin-bottom: 29px;
+margin-top: 68px;
+font-size: 14px;
+line-height: 14px;
+color: #394b50;
+text-transform: uppercase;
+font-family: Lato;
+font-weight: 400;}
+.footer_nav a{
+text-decoration: none;
+color: inherit;
+padding-left: 20px;
+padding-right: 20px;
+height: 34px;
+padding-top: 10px;
+padding-bottom: 10px;
+line-height: 34px;
+}
+.footer_nav ul{
+display:  flex;
+justify-content: center;
+}
+.footer_nav ul li{
+transition: background 300ms ease-in-out;
+margin: 0 1px;
+}
+.footer_nav ul li:hover{
+background: #868686;
+border-radius: 2px;
+color: #ffffff;
+transition: background 300ms ease-in-out;
+}
+footer.footer .numbers_main{
+color: #394b50;
+font-family: Lato;
+font-size: 23px;
+font-weight: 400;
+line-height: 24.15px;
+margin-bottom: 23px;
+}
+footer.footer .numbers_main i{
+font-size: 20px;
+}
+footer.footer .social{
+color: #709dca;
+font-size: 18px;
+font-weight: 400;
+line-height: 24.99px;
+margin-bottom: 53px;
+}
+footer.footer .social .fa-twitter{
+color: #ffc155;
+padding-right: 7.5px;
+}
+footer.footer .social a{
+color: #709dca;
+padding-right: 7.5px;
+padding-left: 7.5px;
+}
+footer.footer .social i:hover{
+color: #ffc155;
+}
+footer.copyright{
+background: #709dca;
+text-align: center;
+}
+footer.copyright p{
+color: #ffffff;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 24px;
+padding-top: 15px;
+padding-bottom: 15px;
+}

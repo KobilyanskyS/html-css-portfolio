@@ -1,0 +1,320 @@
+/*Подключаем таблицу сброса стилей для браузера находится рядом с таблицей style.css в папке styles*/
+@import "reset.css";
+/*Подключаем шрифт ко всем элементам сайта*/
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+/*Подгоняем Wrapper для каждого блока сайта (ширина и центрирование)*/
+.wrapper{
+	max-width: 1140px;
+	width: calc(100% - 40px);
+	margin: 0 auto;
+}
+/*Стилизуем самую верхнюю часть футера логотип + навигация, отображаем в ряд и с отступами между собой*/
+.top_line{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 150px;
+}
+/*Даем фоновый цвет шапке сайта*/
+header{
+	background: #87509c;
+}
+/*Стилизуем шрифт навигации сайта*/
+.header_nav{
+	font-size: 16px;
+	line-height: 16px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+/*Стилизуем ссылки в навигации отключаем подчеркивание ссылок и цвет шрифта делаем наследуемым от основного блока*/
+.header_nav a{
+	text-decoration: none;
+	color: inherit;
+}
+/*Отображаем список в навигации в строку*/
+.header_nav ul{
+	display: flex;
+}
+/*Каждому элементу в навигации прописываем отступы справа и слева + высоту*/
+.header_nav ul li{
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 30px;
+	line-height: 30px;
+	transition: background 300ms ease-in-out;
+	margin: 0 1px;
+}
+/*Первому элементу (Home) прописываем рамку + цвет фона*/
+.header_nav ul li.active{
+	background: #643a79;
+	border-radius: 3px;
+}
+/*Всем элементам прописываем рамку + цвет фона при НАВЕДЕНИИ*/
+.header_nav ul li:hover{
+	background: #643a79;
+	border-radius: 3px;
+	transition: background 300ms ease-in-out;
+}
+/*Для нижней части шапки сайта прописываем центрирование текста и отступы сверху и снизу*/
+.bottom_line{
+	text-align: center;
+	padding-top: 85px;
+	padding-bottom: 145px;
+}
+/*Для параграфа нижней части сайта прописываем шрифты, цвет шрифта, и отступ снизу до кнопки*/
+.bottom_line p{
+	font-size: 42px;
+	line-height: 48px;
+	color: #f7f3ea;
+	font-weight: 700;
+	margin-bottom: 54px;
+}
+/*Прописываем стили для кнопки шапки*/
+.button{
+	display: inline-block;
+	padding-left: 82px;
+	padding-right: 82px;
+	background: #eb7d4b;
+	height: 65px;
+	line-height: 65px;
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	border-bottom: 4px solid #c86a40;
+	transition: background 300ms ease-in-out;
+}
+/*Прописываем стили для кнопки в шапке при НАВЕДЕНИИ*/
+.button:hover{
+	border-bottom: 4px solid #c86a40;
+	background: #c86a40;
+	transition: background 300ms ease-in-out;
+}
+/*Для первой секции (Services) прописываем фон, отступы + центрирование текста*/
+section.services{
+	background: #17c2a4;
+	padding: 120px 0;
+	text-align: center;
+}
+/*Для заголовка первой секции прописываем стили*/
+section.services h2{
+	font-size: 40px;
+	line-height: 1;
+	color: #fff;
+	letter-spacing: 0.1em;
+	font-weight: 700;
+	margin-bottom: 23px;
+	padding-bottom: 25px;
+	position: relative;
+}
+/*Делаем подчеркивание под заголовком*/
+section.services h2:after{
+	content: "";
+	display: block;
+	width: 85px;
+	height: 4px;
+	background: rgba(0,0,0,0.15);
+	position: absolute;
+	left:50%;
+	margin-left: -42px;
+	bottom:0;
+}
+/*Стилизуем шрифт и отступ снизу для описания первой секции (Services)*/
+section.services .description{
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+	letter-spacing: 0.02em;
+	font-weight: 400;
+	margin-bottom: 70px;
+}
+/*Отображаем карточки в строку с отступами между друг другом*/
+section.services .services_list{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+/*Задаем ширинку каждой отдельной карточки*/
+section.services .services_list .service_item{
+	width: calc(25%-15px);
+}
+/*Стилизуем картинку карточки, ее отображение и отступы снизу*/
+section.services .services_list .service_item .img{
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+/*Стилизуем шрифт и отступ снизу для заголовка каждой карточки*/
+section.services .services_list .service_item .item_title{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 27px;
+}
+/*Стилизуем шрифт и отступы справа и слева для описания карточки*/
+section.services .services_list .service_item .item_description{
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	padding-left: 38px;
+	padding-right: 38px;
+	box-sizing: border-box;
+}
+/*Применяем стили для фона, ценрирования текста и отступов второй секции (Contact)*/
+section.contact{
+	background: #3c5499;
+	padding: 120px 0;
+	text-align: center;
+}
+/*Стилизуем шрифт и отступы для заголовка второй секции (Contact)*/
+section.contact h2{
+	font-size: 40px;
+	line-height: 1;
+	color: #fff;
+	letter-spacing: 0.1em;
+	font-weight: 700;
+	margin-bottom: 23px;
+	padding-bottom: 25px;
+	position: relative;
+}
+/*Добавляем подчеркивание под заголовком*/
+section.contact h2:after{
+	content: "";
+	display: block;
+	width: 85px;
+	height: 4px;
+	background: rgba(0,0,0,0.15);
+	position: absolute;
+	left:50%;
+	margin-left: -42px;
+	bottom:0;
+}
+/*Стилизуем шрифт и отступ снизу для описания второй секции (Contact)*/
+section.contact .description{
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+	letter-spacing: 0.02em;
+	font-weight: 400;
+	margin-bottom: 70px;
+}
+/*Задаем расположение контактной формы второй секции (Contact)*/
+section.contact .contact_form{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+max-width: 856px;
+margin: 0 auto;
+}
+/*Применяем стили для ввода имени и почты*/
+section.contact .contact_form input[type="text"], section.contact .contact_form input[type="email"]{
+	width: calc(50% - 16px);
+	margin-bottom: 25px;
+	background: #273a71;
+	color: #fff;
+	border-radius: 3px;
+	border: 0;
+	padding-left: 23px;
+	height: 56px;
+	line-height: 56px;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+/*Задаем цвет текста и его ширину для браузеров каждого поля ввода формы*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+  font-size: 18px;
+}
+input::-moz-placeholder, textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  font-size: 18px;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+  font-size: 18px;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+  font-size: 18px;
+}
+/*Задаем стили для поля ввода сообщения*/
+section.contact .contact_form textarea{
+	width: 100%;
+	margin-bottom: 60px;
+	background: #273a71;
+	color: #fff;
+	border-radius: 3px;
+	border: 0;
+	padding-left: 23px;
+	height: 200px;
+	line-height: 56px;
+	font-size: 30px;
+	box-sizing: border-box;
+}
+/*Задаем ширину и центрирование текста для блока кнопки*/
+section.contact .contact_form .submit{
+	width: 100%;
+	text-align: center;
+}
+/*Стилизуем кнопку*/
+section.contact .contact_form input[type="submit"]{
+	border: 0;
+	display: inline-block;
+	padding-left: 82px;
+	padding-right: 82px;
+	background: #30bae7;
+	height: 65px;
+	line-height: 65px;
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	border-bottom: 4px solid #299ec4;
+	transition: background 300ms ease-in-out;
+
+}
+/*Задаем стили для кнопки при наведении*/
+section.contact .contact_form input[type="submit"]:hover{
+	background: #299ec4;
+	transition: background 300ms ease-in-out;
+}
+/*Задаем фон подвалу*/
+footer.footer{
+	background: #344b8e;
+}
+/*Стилизуем шрифт в подвале*/
+.footer_social{
+	font-size: 24px;
+	letter-spacing: 0.02em;
+	font-weight: 600;
+	color: #fff;
+}
+/*Растягиваем в строку все элементы подвала*/
+.footer_social ul{
+	min-height: 110px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/*Убираем подчеркивание ссылок и цвет делаем наследственным от ul*/
+footer.footer a{
+	text-decoration: none;
+	color: inherit;
+}
+/*Меняем цвет шрифта ссылок подвала при наведении*/
+footer.footer a:hover{
+	color: #30b7e5;
+}

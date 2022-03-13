@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<!--Подключаем шрифт для сайта с Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&display=swap" rel="stylesheet">
+	<!--Подключаем таблицу стилей-->
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<!--Шапка сайта начало-->
+	<header>
+		<!--Wrapper для отступов справа и слева от контента (будет применяться и для последующих блоков сайта) начало-->
+		<div class="wrapper">
+			<div class="top_line">
+			<!--Логотип начало-->
+				<a href="#" title="logo"><img src="images/logo.png" alt="logo"></a>
+			<!--Логотип конец-->
+				<!--Навигация сайта начало-->
+				<nav class="header_nav">
+					<ul>
+						<li class="active"><a href="">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Work</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+				<!--Навигация сайта конец-->
+			</div>
+			<!--Параграф с конпкой в шапке начало-->		
+			<div class="bottom_line">
+				<p>Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</p>
+				<a href="#" class="button">WORK WITH US!</a>
+			</div>
+			<!--Параграф с конпкой в шапке конец-->
+		</div>
+		<!--Wrapper для отступов справа и слева от контента (будет применяться и для последующих блоков сайта) конец-->
+	</header>
+	<!--Первая секция с карточками (Services) начало-->
+	<section class="services">
+		<!--Тот самый Wrapper, который дает отступы начало-->
+		<div class="wrapper">
+			<!--Заголовок первой секции (Services) начало-->
+			<h2>SERVICES WE PROVIDE</h2>
+			<!--Заголовок первой секции (Services) конец-->
+			<!--Описание к первой секции (Services) начало-->
+			<p class="description">We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</p>
+			<!--Описание к первой секции (Services) конец-->
+			<!--Блок с карточками начало-->
+		<div class="services_list">
+			<!--Первая карточка начало-->
+				<div class="service_item">
+					<div class="img">
+						<img src="images/flag.png" alt="icon">
+					</div>
+						<h3 class="item_title">Branding</h3>
+						<p class="item_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+				</div>
+				<!--Первая карточка конец-->
+				<!--Вторая карточка начало-->
+				<div class="service_item">
+					<div class="img">
+						<img src="images/pen.png" alt="icon">
+					</div>
+						<h3 class="item_title">Design</h3>
+						<p class="item_description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+				</div>
+				<!--Вторая карточка конец-->
+				<!--Третья карточка начало-->
+				<div class="service_item">
+					<div class="img">
+						<img src="images/3.png" alt="icon">
+					</div>
+						<h3 class="item_title">Development</h3>
+						<p class="item_description">At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+				</div>
+				<!--Третья карточка конец-->
+				<!--Четвертая карточка начало-->
+				<div class="service_item">
+					<div class="img">
+						<img src="images/4.png" alt="icon">
+					</div>
+						<h3 class="item_title">ROCKET SCIENCE</h3>
+						<p class="item_description">Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+				</div>
+				<!--Четвертая карточка конец-->
+				</div>
+				<!--Блок с карточками конец-->
+		</div>
+		<!--Тот самый Wrapper, который дает отступы конец-->
+	</section>
+	<!--Первая секция с карточками (Services) конец-->
+	<!--Вторая секция с контактами (Contact) начало-->
+	<section class="contact">
+		<!--Тот самый Wrapper, который дает отступы начало-->
+		<div class="wrapper">
+			<!--Заголовок второй секции (Contact) начало-->
+			<h2>GET IN TOUCH</h2>
+			<!--Заголовок второй секции (Contact) конец-->
+			<!--Описание ко второй секции (Contact) начало-->
+			<p class="description">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+			<!--Описание ко второй секции (Contact) начало-->
+			<!--Контактная форма начало-->
+			<form class="contact_form">
+				<!--Текстовое поле с вводом имени начало-->
+				<input type="text" placeholder="Your Name *" required />
+				<!--Текстовое поле с вводом имени конец-->
+				<!--Текстовое поле с вводом почты начало-->
+				<input type="text" placeholder="Your Email *" required />
+				<!--Текстовое поле с вводом почты конец-->
+				<!--Поле для ввода сообщения начало--->
+				<textarea placeholder="Your Message *"></textarea>
+				<!--Поле для ввода сообщения конец--->
+				<!--Кнопка для отправки данных с формы начало-->
+				<div class="submit">
+					<input type="submit" value="SEND MESSAGE" />
+				</div>
+				<!--Кнопка для отправки данных с формы конец-->
+			</form>
+			<!--Контактная форма конец-->
+		</div>
+		<!--Тот самый Wrapper, который дает отступы конец-->
+	</section>
+	<!--Вторая секция с контактами (Contact) конец-->
+	<!--Подвал сайта начало-->
+	<footer class="footer">
+		<!--Тот самый Wrapper, который дает отступы начало-->
+		<div class="wrapper">
+			<!--Список социальных сетей для связи начало-->
+			<nav class="footer_social">
+				<ul>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Google+</a></li>
+					<li><a href="#">LinkedIn</a></li>
+					<li><a href="#">Behance</a></li>
+					<li><a href="#">Dribble</a></li>
+					<li><a href="#">GitHub</a></li>
+				</ul>
+			</nav>
+			<!--Список социальных сетей для связи начало-->
+		</div>
+		<!--Тот самый Wrapper, который дает отступы конец-->
+	</footer>
+	<!--Подвал сайта конец-->
+</body>
+</html>
