@@ -10,11 +10,11 @@ h1{
 }
 .wrapper{
     margin: 0 auto;
-    width: 600px;
+    width: 650px;
     height: 40em;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 .main{
     display: flex;
