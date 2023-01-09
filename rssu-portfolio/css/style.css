@@ -23,16 +23,10 @@ body, html {
   }
 .full_bg{
     height: 100%;
-    background-image: url(/rssu-portfolio/photos/background.jpg);
+    background: #FFFFFF;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.full_bg__blur{
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(4px); 
-    height: 100%;
-	width: 100%;
 }
 .wrapper{
     width: 1060px;
@@ -86,7 +80,7 @@ body, html {
 .bold_text{
     font-size: 48px;
     font-family: 'Museo Sans Cyrl 700';
-    color: white;
+    color: black;
     text-transform: uppercase;
     text-align: center;
 }
